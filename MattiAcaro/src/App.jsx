@@ -4,6 +4,11 @@ import Navbar from "./Components/NavBar";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
 import Services from "./Components/Services";
+import SideNav from "./Components/SideNav";
+import Gallery from "./Components/Gallery";
+import Testimonials from "./Components/Testimonials";
+import FAQ from "./Components/FAQ";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
@@ -11,10 +16,16 @@ export default function App() {
       <div id="Inicio" className="w-full max-w-full h-svh flex flex-col py-6" >
             <Navbar className="overflow-x-hidden" />
 
+
             <Hero className="overflow-x-hidden" />
       </div>
+      <div className=""><SideNav /></div>
       <div id="Sobre" className="w-full overflow-x-hidden"><About /></div>
       <div id="Servicos" className="w-full overflow-x-hidden"><Services /></div>
+      <div id="Galeria" className="w-full overflow-x-hidden"><Gallery /></div>
+      <div id="Depoimentos" className="w-full overflow-x-hidden"><Testimonials /></div>
+      <div id="FAQ" className="w-full overflow-x-hidden"><FAQ /></div>
+      <div className="w-full overflow-x-hidden"><Footer /></div>
     </div>
   );
 }

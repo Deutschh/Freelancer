@@ -20,3 +20,17 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
+
+@keyframes scroll-vertical {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.animate-scroll-vertical {
+  animation: scroll-vertical 40s linear infinite; /* 40s para ser bem suave */
+}
+
+/* Pausa a animação quando o mouse passa por cima para ler */
+.animate-scroll-vertical:hover {
+  animation-play-state: paused;
+}

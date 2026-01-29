@@ -64,7 +64,7 @@ const Navbar = () => {
       </div>
 
       {/* ================= NAVBAR DESKTOP ================= */}
-      <div className="hidden md:flex fixed top-0 w-full justify-center z-50 pt-6 gap-x-6 xl:gap-x-10">
+      <div className="hidden md:flex top-0 w-full justify-center z-50 pt-6 gap-x-6 xl:gap-x-10">
         
         {/* Bloco Central (Logo + Links) */}
         <div className="bg-white/90 backdrop-blur-md w-auto px-6 h-20 rounded-full shadow-[0px_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-between transition-all duration-300">

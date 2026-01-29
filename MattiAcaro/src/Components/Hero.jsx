@@ -29,7 +29,7 @@ const CleaningButton = () => (
 
 export default function Hero() {
   return (
-    <section id="Inicio" className="relative pt-24 pb-12 lg:pt-28 lg:pb-24 overflow-x-hidden">
+    <section id="Inicio" className="relative pt-24 pb-12 lg:pt-28 lg:pb-24 ">
       
       <div className="max-w-10/12 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

@@ -79,7 +79,7 @@ export default function About() {
 
             <button 
                 onClick={() => document.getElementById('Servicos').scrollIntoView({ behavior: 'smooth' })}
-                className="text-blue-600 font-bold hover:text-blue-800 transition-colors flex items-center gap-2 group"
+                className="text-blue-600 font-bold hover:text-blue-800 transition-colors flex items-center gap-2 group cursor-pointer"
             >
                 Conheça nossos serviços
                 <span className="transform group-hover:translate-x-1 transition-transform">→</span>
