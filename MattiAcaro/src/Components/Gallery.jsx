@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, ArrowRightLeft, ZoomIn, CheckCircle2 } from 'lucide-react';
+import Antes from '../assets/Antes.jpeg'; // Substitua pelo caminho real da imagem
+import Depois from '../assets/Depois.jpeg'; // Substitua pelo caminho real da imagem
 
 // === COMPONENTE DO SLIDER ANTES/DEPOIS ===
 const ComparisonSlider = () => {
@@ -7,8 +9,8 @@ const ComparisonSlider = () => {
   const [isDragging, setIsDragging] = useState(false);
 
   // Imagens de Exemplo (Tente pegar uma foto EXATAMENTE do mesmo ângulo do seu cliente depois)
-  const imgAfter = "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"; // Sofá Limpo (Claro)
-  const imgBefore = "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"; // Sofá Sujo/Escuro (Usei uma cor diferente para simular o contraste extremo)
+  const imgAfter = Depois; // Sofá Limpo (Claro)
+  const imgBefore = Antes; // Sofá Sujo/Escuro (Usei uma cor diferente para simular o contraste extremo)
 
   const handleMove = (event) => {
     const rect = event.currentTarget.getBoundingClientRect();
@@ -74,7 +76,7 @@ export default function Gallery() {
     { id: 1, title: "Sofá Retrátil 3 Lugares", tag: "Remoção de Manchas", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
     { id: 2, title: "Poltronas de Veludo", tag: "Higienização Profunda", img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
     { id: 3, title: "Colchão King Size", tag: "Anti-Ácaros", img: "https://images.unsplash.com/photo-1631049552057-403cdb8f0658?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
-    { id: 4, title: "Cadeiras de Jantar", tag: "Revitalização de Cor", img: "https://images.unsplash.com/photo-1596162955779-9c8f8518b76c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
+    { id: 4, title: "Cadeiras de Jantar", tag: "Revitalização de Cor", img: "https://cdn.awsli.com.br/2500x2500/2600/2600636/produto/262126827/cadeira-para-mesa-de-jantar-4-lara-superior-preta-ctjnjuyw0z.jpeg" },
   ];
 
   return (
@@ -153,7 +155,7 @@ export default function Gallery() {
         {/* Botão de CTA Final */}
         <div className="mt-16 text-center">
             <a 
-                href="https://wa.me/55SEUNUMERO"
+                href="https://wa.me/5511921212503"
                 target="_blank"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-green-500 rounded-full shadow-lg hover:bg-green-600 hover:shadow-green-500/40 transform hover:-translate-y-1 transition-all duration-300 gap-2"
             >

@@ -9,6 +9,7 @@ import Gallery from "./Components/Gallery";
 import Testimonials from "./Components/Testimonials";
 import FAQ from "./Components/FAQ";
 import Footer from "./Components/Footer";
+import RainbowSection from "./Components/RainbowSection";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       </div>
       <div className=""><SideNav /></div>
       <div id="Sobre" className="w-full overflow-x-hidden"><About /></div>
+      <div id="Rainbow" className="w-full overflow-x-hidden"><RainbowSection /></div>
       <div id="Servicos" className="w-full overflow-x-hidden"><Services /></div>
       <div id="Galeria" className="w-full overflow-x-hidden"><Gallery /></div>
       <div id="Depoimentos" className="w-full overflow-x-hidden"><Testimonials /></div>

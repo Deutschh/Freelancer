@@ -15,7 +15,7 @@ export default function About() {
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
             <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
             
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-b-10 border-blue-900  md:aspect-auto md:h-[600px]">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-b-10 border-blue-900 sm:mx-20 md:mx-28 md:aspect-auto lg:mx-0 mx-4 md:h-[600px] mt-28 lg:mt-0">
               {/* IMAGEM NOVA: Foco no bico da extratora limpando sofá bege (clean e profissional) */}
               <img 
                 src={EquipmentImg}
@@ -24,7 +24,7 @@ export default function About() {
               />
               
               {/* Selo de Tecnologia */}
-              <div className="absolute top-4 right-4 bg-white/95 backdrop-blur px-4 py-2 rounded-lg shadow-lg flex items-center gap-2 z-10">
+              <div className="absolute top-4 right-4  bg-white/95 backdrop-blur px-4 py-2 rounded-lg shadow-lg flex items-center gap-2 z-10">
                 <Shield className="text-blue-600" size={20} />
                 <div>
                     <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Tecnologia</p>

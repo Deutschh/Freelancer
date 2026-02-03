@@ -6,7 +6,7 @@ import Aspirador from "../assets/Aspirador.svg";
 // --- COLOQUE O COMPONENTE DO BOTÃO AQUI OU IMPORTE DE UM ARQUIVO ---
 const CleaningButton = () => (
   <a 
-    href="https://wa.me/55SEUNUMERO" 
+    href="https://wa.me/5511921212503" 
     target="_blank"
     // Mudei para bg-blue-400 (mais claro) para dar contraste quando "limpar"
     className="group relative flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-blue-400 rounded-full shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-blue-500/50"

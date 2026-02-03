@@ -63,7 +63,7 @@ export default function FAQ() {
                 </p>
 
                 <a 
-                    href="https://wa.me/55SEUNUMERO" 
+                    href="https://wa.me/5511921212503" 
                     target="_blank"
                     className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-bold text-white bg-green-500 rounded-xl shadow-lg hover:bg-green-600 hover:shadow-green-500/30 transform hover:-translate-y-1 transition-all duration-300 gap-3 group"
                 >

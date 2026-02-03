@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Quote, CheckCircle } from 'lucide-react';
+import LogoGrande from '../assets/Logo-Grande.svg'; 
 
 export default function Testimonials() {
 
@@ -66,7 +67,7 @@ export default function Testimonials() {
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/10 aspect-square lg:aspect-[4/5] group">
               {/* Foto: Família Feliz no Sofá (Representa o benefício final) */}
               <img 
-                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                src={"https://img.freepik.com/fotos-premium/a-familia-feliz-sentada-no-sofa_474601-8890.jpg"}
                 alt="Família feliz no sofá limpo" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />

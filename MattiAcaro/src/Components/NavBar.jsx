@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-// 1. Adicionei 'Instagram' na importação
-import { MessageCircle, Home, Info, Briefcase, Image, HelpCircle, Instagram } from "lucide-react"; 
+// 1. Adicionei os ícones que faltavam: User (Sobre), Star (Depoimentos), Droplets (Rainbow)
+import { MessageCircle, Home, Info, Briefcase, Image, HelpCircle, Instagram, User, Star, Droplets } from "lucide-react"; 
 
 // Substitua pelo caminho real da sua logo
 import Logo from '../assets/logo.svg'; 
@@ -47,24 +47,24 @@ const Navbar = () => {
     <div className="w-full h-20 ovwerflow-hidden">
       
       {/* ================= BARRA MOBILE ================= */}
-      <div className="w-full bg-white md:hidden h-20 flex justify-between items-center px-4 shadow-sm fixed top-0 z-50">
-        <div className="md:hidden">
+      <div className="w-full bg-white lg:hidden h-20 flex justify-between items-center px-4 shadow-sm fixed top-0 z-50">
+        <div className="lg:hidden">
           <button onClick={handleMenuToggle} className="p-2 focus:outline-none">
             {menuOpen ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>
-        <div className="w-32">
+        <div className="w-16">
             <img src={Logo} alt="Matti Ácaro Logo" className="w-full object-contain" />
         </div>
         
         {/* Ícone do Instagram no topo do mobile (opcional, para acesso rápido) */}
-        <a href="https://instagram.com/SEU_USER" target="_blank" className="text-pink-600">
+        <a href="https://www.instagram.com/mattiacaro.higienizacoes/" target="_blank" className="text-pink-600">
             <Instagram size={28} />
         </a> 
       </div>
 
       {/* ================= NAVBAR DESKTOP ================= */}
-      <div className="hidden md:flex top-0 w-full justify-center z-50 pt-6 gap-x-6 xl:gap-x-10">
+      <div className="hidden lg:flex top-0 w-full justify-center z-50 pt-6 gap-x-6 xl:gap-x-10">
         
         {/* Bloco Central (Logo + Links) */}
         <div className="bg-white/90 backdrop-blur-md w-auto px-6 h-20 rounded-full shadow-[0px_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-between transition-all duration-300">
@@ -78,10 +78,11 @@ const Navbar = () => {
             <div className="bg-blue-100/70 flex rounded-full px-2 py-1 gap-1 xl:gap-2">
                 {[
                     { id: 'Inicio', label: 'Início' },
-                    { id: 'Sobre', label: 'Sobre nós' },
+                    { id: 'Sobre', label: 'Sobre nós' }, // Já estava aqui, mantive
+                    { id: 'Rainbow', label: 'Rainbow' }, // ADICIONADO
                     { id: 'Servicos', label: 'Serviços' },
                     { id: 'Galeria', label: 'Galeria' },
-                    { id: 'Depoimentos', label: 'Depoimentos' },
+                    { id: 'Depoimentos', label: 'Depoimentos' }, // ADICIONADO
                     { id: 'FAQ', label: 'FAQ' },
                 ].map((item) => (
                     <button
@@ -115,7 +116,7 @@ const Navbar = () => {
 
             {/* Botão WhatsApp */}
             <a 
-                href="https://wa.me/55SEUNUMERO" 
+                href="https://wa.me/5511921212503" 
                 target="_blank" 
                 className="bg-green-500 hover:bg-green-600 text-white px-6 h-14 rounded-full font-bold flex items-center gap-2 transition-all duration-300 shadow-lg hover:shadow-green-500/30 transform hover:-translate-y-1 text-lg whitespace-nowrap"
             >
@@ -138,30 +139,33 @@ const Navbar = () => {
 
       <div
         className={`
-          md:hidden fixed top-0 left-0 h-screen w-3/4 max-w-sm bg-white z-50
+          lg:hidden fixed top-0 left-0 h-screen w-3/4 max-w-sm bg-white z-50
           transform transition-transform duration-300 ease-in-out shadow-2xl flex flex-col justify-between
           ${menuOpen ? "translate-x-0" : "-translate-x-full"}
         `}
       >
         <div>
             {/* Cabeçalho Menu */}
-            <div className="flex flex-col items-center py-8 border-b border-gray-100 bg-blue-50/50">
+            <div className="flex flex-col items-center py-8 border-b border-gray-100 bg-white">
                 <img src={Logo} alt="Matti Ácaro" className="w-32 mb-2" />
-                <p className="text-xs text-blue-400 font-medium">Higienização Profissional</p>
+                <p className="text-lg text-blue-400 font-medium">Higienização Profissional</p>
             </div>
 
             {/* Links Mobile */}
-            <div className="flex flex-col mt-6 px-4 space-y-2">
+            <div className="flex flex-col mt-6 px-4 space-y-2 cursor-pointer">
                 {[
                     { id: 'Inicio', label: 'Início', icon: Home },
+                    { id: 'Sobre', label: 'Sobre Nós', icon: User }, // ADICIONADO
+                    { id: 'Rainbow', label: 'Rainbow', icon: Droplets }, // ADICIONADO
                     { id: 'Servicos', label: 'Nossos Serviços', icon: Briefcase },
                     { id: 'Galeria', label: 'Antes e Depois', icon: Image },
+                    { id: 'Depoimentos', label: 'Depoimentos', icon: Star }, // ADICIONADO
                     { id: 'FAQ', label: 'Dúvidas Comuns', icon: HelpCircle },
                 ].map((item) => (
                     <button
                         key={item.id}
                         onClick={() => scrollToSection(item.id)}
-                        className="flex items-center w-full p-4 rounded-xl text-blue-900 hover:bg-blue-50 transition-colors duration-200 group"
+                        className="flex items-center w-full p-4 rounded-xl text-blue-900 hover:bg-blue-50 transition-colors duration-200 group cursor-pointer"
                     >
                         <item.icon className="mr-4 text-blue-500 group-hover:text-blue-700" size={24} />
                         <span className="font-medium text-lg">{item.label}</span>
@@ -177,7 +181,7 @@ const Navbar = () => {
             <a 
                 href="https://www.instagram.com/mattiacaro.higienizacoes?igsh=N3dheHVtcDZ6NTI0"
                 target="_blank"
-                className="w-full mb-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 rounded-2xl flex justify-center items-center font-semibold shadow-md"
+                className="w-full mb-3 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 text-white py-3 rounded-2xl flex justify-center items-center font-semibold shadow-md"
             >
                 <Instagram className="mr-2" size={20} />
                 Siga no Instagram
@@ -185,7 +189,7 @@ const Navbar = () => {
 
             {/* Botão WhatsApp Mobile */}
             <a 
-                href="https://wa.me/55SEUNUMERO"
+                href="https://wa.me/+5511921212503"
                 target="_blank"
                 className="w-full bg-green-500 text-white py-4 rounded-2xl flex justify-center items-center font-bold text-lg shadow-lg hover:bg-green-600 transition-colors"
             >

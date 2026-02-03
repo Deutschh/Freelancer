@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
-// 1. Adicionei 'Star' aos imports
-import { Home, User, Sparkles, Image, MessageCircle, HelpCircle, Instagram, Star } from 'lucide-react';
+// 1. Adicionei 'Droplets' aos imports para o ícone da Rainbow
+import { Home, User, Sparkles, Image, MessageCircle, HelpCircle, Instagram, Star, Droplets } from 'lucide-react';
 
 export default function SideNav() {
   const [activeSection, setActiveSection] = useState('Inicio');
 
   const navItems = [
     { id: 'Sobre', label: 'Sobre Nós', icon: <User size={20} /> },
+    // 2. Adicionei a seção Rainbow aqui (Logo abaixo de Sobre Nós)
+    { id: 'Rainbow', label: 'Rainbow', icon: <Droplets size={20} /> },
     { id: 'Servicos', label: 'Serviços', icon: <Sparkles size={20} /> },
     { id: 'Galeria', label: 'Resultados', icon: <Image size={20} /> },
-    // 2. Adicionei a seção Depoimentos aqui
     { id: 'Depoimentos', label: 'Depoimentos', icon: <Star size={20} /> },
     { id: 'FAQ', label: 'Dúvidas', icon: <HelpCircle size={20} /> },
   ];
@@ -23,8 +24,8 @@ export default function SideNav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // 3. Adicionei 'Depoimentos' na lista de detecção do scroll
-      const sections = ['Inicio', 'Sobre', 'Servicos', 'Galeria', 'Depoimentos', 'FAQ'].map(id => ({
+      // 3. Adicionei 'Rainbow' na lista de detecção do scroll (na ordem correta)
+      const sections = ['Inicio', 'Sobre', 'Rainbow', 'Servicos', 'Galeria', 'Depoimentos', 'FAQ'].map(id => ({
         id,
         element: document.getElementById(id)
       }));
@@ -95,7 +96,7 @@ export default function SideNav() {
 
         {/* === BOTÃO INSTAGRAM === */}
         <a 
-          href="https://instagram.com/SEU_PERFIL" 
+          href="https://www.instagram.com/mattiacaro.higienizacoes?igsh=N3dheHVtcDZ6NTI0" 
           target="_blank"
           className="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 text-white flex items-center justify-center shadow-lg hover:shadow-pink-500/50 transition-all duration-300 hover:scale-110 group relative"
         >
@@ -108,7 +109,7 @@ export default function SideNav() {
 
         {/* === BOTÃO WHATSAPP === */}
         <a 
-          href="https://wa.me/55SEUNUMERO" 
+          href="https://wa.me/+5511921212503" 
           target="_blank"
           className="w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg hover:bg-green-600 hover:shadow-green-500/50 transition-all duration-300 hover:scale-110 group relative"
         >

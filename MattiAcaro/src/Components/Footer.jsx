@@ -30,13 +30,13 @@ export default function Footer() {
             </p>
             {/* Redes Sociais */}
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300">
+              <a href="https://www.instagram.com/mattiacaro.higienizacoes/" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300">
+              <a href="https://www.facebook.com/grupomattiacaro/" target="_blank" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300">
                 <Facebook size={20} />
               </a>
-              <a href="https://wa.me/55SEUNUMERO" target="_blank" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all duration-300">
+              <a href="https://wa.me/+5511921212503" target="_blank" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all duration-300">
                 <MessageCircle size={20} />
               </a>
             </div>
@@ -66,18 +66,18 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="text-blue-500 shrink-0" size={18} />
-                <span>Atendemos em toda região de <br/> <span className="text-white font-medium">Sua Cidade - UF</span></span>
+                <span>Atendemos em toda região de <br/> <span className="text-white font-medium">São Paulo - SP</span></span>
               </li>
               <li className="flex items-center gap-3">
                 <MessageCircle className="text-green-500 shrink-0" size={18} />
-                <a href="https://wa.me/55SEUNUMERO" target="_blank" className="hover:text-green-400 transition-colors">
-                  (XX) 99999-9999
+                <a href="https://wa.me/+5511921212503" target="_blank" className="hover:text-green-400 transition-colors">
+                  (11) 92121-2503
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-blue-500 shrink-0" size={18} />
                 <a href="mailto:contato@mattiacaro.com" className="hover:text-blue-400 transition-colors">
-                  contato@mattiacaro.com
+                  mattiacarohigienizacoes@gmail.com
                 </a>
               </li>
             </ul>
@@ -89,11 +89,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex justify-between items-center border-b border-slate-800 pb-2">
                 <span className="flex items-center gap-2"><Clock size={14} className="text-blue-500"/> Seg - Sex</span>
-                <span className="text-white">08:00 - 18:00</span>
+                <span className="text-white">08:00 - 20:00</span>
               </li>
               <li className="flex justify-between items-center border-b border-slate-800 pb-2">
                 <span className="flex items-center gap-2"><Clock size={14} className="text-blue-500"/> Sábado</span>
-                <span className="text-white">08:00 - 14:00</span>
+                <span className="text-white">09:00 - 14:00</span>
               </li>
               <li className="flex justify-between items-center pb-2 opacity-50">
                 <span className="flex items-center gap-2"><Clock size={14}/> Domingo</span>

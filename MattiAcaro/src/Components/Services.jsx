@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Search, Wind, Sparkles, Droplets, Sun, ChevronRight, CheckCircle2, AlertCircle, ChevronLeft } from 'lucide-react';
+import Inspecao from '../assets/Inspecao.png';
 
 export default function Services() {
   
@@ -14,7 +15,7 @@ export default function Services() {
       icon: <Search className="w-6 h-6 md:w-8 md:h-8" />,
       desc: "Nossa equipe técnica analisa o tipo de tecido (Suede, Linho, Veludo), grau de sujidade e manchas específicas. Isso define a escolha exata dos produtos (pH) para garantir segurança total.",
       techInfo: "Identificação de fibras sintéticas vs naturais.",
-      image: "https://images.unsplash.com/photo-1556910103-1c02745a30bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image:"https://blogbauhausdesign.wordpress.com/wp-content/uploads/2019/02/limpeza-hidratacao-sofa-poltrona-couro.jpg?w=640"
     },
     {
       id: 1,
@@ -24,7 +25,7 @@ export default function Services() {
       icon: <Wind className="w-6 h-6 md:w-8 md:h-8" />,
       desc: "Removemos a 'sujeira seca' (poeira, pele morta, cabelos) que está profunda na espuma. Essa etapa é crucial para não criar 'lama' na hora de molhar o tecido.",
       techInfo: "Sucção industrial de alta potência.",
-      image: "https://images.unsplash.com/photo-1527515673510-813d3192c095?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "https://kzacompleta.com.br/wp-content/uploads/2023/11/aspirador-para-limpar-sofa.png"
     },
     {
       id: 2,
@@ -34,7 +35,7 @@ export default function Services() {
       icon: <Sparkles className="w-6 h-6 md:w-8 md:h-8" />,
       desc: "Aplicamos um flotador importado. A tecnologia faz com que as moléculas de sujeira se 'soltem' das fibras do tecido e flutuem para a superfície, facilitando a remoção.",
       techInfo: "Ação bactericida e fungicida.",
-      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "https://sofalimpo.com.br/wp-content/themes/sofalimpo/images/flotacao-e-limpeza-espuma.webp"
     },
     {
       id: 3,
@@ -44,7 +45,7 @@ export default function Services() {
       icon: <Droplets className="w-6 h-6 md:w-8 md:h-8" />,
       desc: "Nossa extratora injeta água limpa e suga simultaneamente a sujeira flotada, ácaros e bactérias. O sistema garante que a sujeira não volte para dentro do sofá.",
       techInfo: "Filtro HEPA que retém micropartículas.",
-      image: "https://images.unsplash.com/photo-1581578731117-104529302f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "https://lavanderiaprimavera.net/limpeza%20estofados.jpg"
     },
     {
       id: 4,
@@ -62,7 +63,7 @@ export default function Services() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveStep((prev) => (prev === steps.length - 1 ? 0 : prev + 1));
-    }, 10000); 
+    }, 20000); 
     return () => clearInterval(interval);
   }, [steps.length]);
 
@@ -84,7 +85,7 @@ export default function Services() {
         <div className="relative mb-12 max-w-5xl mx-auto px-2 md:px-8">
           
           {/* Container da Linha para garantir posicionamento correto */}
-          <div className="absolute top-10 left-2 right-2 md:left-8 md:right-8 h-1 z-0 pl-2 pr-2 ">
+          <div className="absolute top-6 md:top-10 sm:left-2 left-2 right-6 sm:right-3 md:left-8 md:right-8 h-1 z-0 pl-2 pr-2 ">
              {/* Linha Cinza de Fundo */}
              <div className="absolute w-11/12 h-full bg-gray-200 rounded-full"></div>
              {/* Linha de Progresso (Azul) */}
